@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        printConstructorData(Person.class); //  생성자 목록 확인
+//        printConstructorData(Person.class); //  생성자 목록 확인
 
         Person noArgumentConstructors = createInstanceWithArguments(Person.class);
         System.out.println(noArgumentConstructors);
@@ -21,7 +21,6 @@ public class Main {
 
         Person allArgumentConstructors = createInstanceWithArguments(Person.class, address, "홍길동", 20);
         System.out.println(allArgumentConstructors);
-
 
     }
 
