@@ -10,11 +10,12 @@ public class Main {
         Class<String> stringClass = String.class;
         Map<String, Integer> mapObject = new HashMap<>();
         Class<?> hashMapClass = mapObject.getClass();
-        Class<?> squareClass = Class.forName("Main$Square");
+        Class<?> squareClass = Class.forName("ch1.Main$Square");
         printClassInfo(stringClass, hashMapClass, squareClass, Collection.class, boolean.class, int[][].class, Color.class);
     }
 
     private static void printClassInfo(Class<?>... classes) {
+
         for (Class<?> clazz : classes) {
             System.out.println(
                     String.format(
@@ -40,7 +41,7 @@ public class Main {
             System.out.println("is enum : " + clazz.isEnum());
             System.out.println("is interface : " + clazz.isInterface());
             System.out.println("is anonymous : " + clazz.isAnonymousClass());
-            
+            System.out.println();
         }
 
     }
