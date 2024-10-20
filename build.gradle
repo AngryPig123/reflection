@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.learnthreading'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+
+    // Lombok for main source
+    implementation 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // Lombok for test source
+    testImplementation 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // with @Slf4j
+    implementation('ch.qos.logback:logback-classic:1.4.12')
+    testImplementation('ch.qos.logback:logback-classic:1.4.12')
+
+}
+
+test {
+    useJUnitPlatform()
+}
