@@ -39,4 +39,13 @@ public class Phone {
         return last;
     }
 
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "first='" + first + '\'' +
+                ", middle='" + middle + '\'' +
+                ", last='" + last + '\'' +
+                '}';
+    }
+
 }

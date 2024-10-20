@@ -42,4 +42,5 @@ public class Exercise {
         return allImplementedInterfaces;
 
     }
+
 }
