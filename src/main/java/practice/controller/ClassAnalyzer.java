@@ -1,7 +1,6 @@
 package practice.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import practice.dto.req.Phone;
 
 import java.util.ArrayList;
 import java.util.Arrays;

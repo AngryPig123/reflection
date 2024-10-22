@@ -1,7 +1,7 @@
 package practice.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import practice.dto.req.Phone;
+import practice.vo.Phone;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

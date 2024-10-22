@@ -1,4 +1,4 @@
-package practice.dto.req;
+package practice.vo;
 
 /**
  * packageName    : practice.dto.req
